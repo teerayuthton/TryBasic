@@ -80,7 +80,6 @@
 		E607C74D28367CAA006ECD57 /* iDine */ = {
 			isa = PBXGroup;
 			children = (
-				E607C74728367BED006ECD57 /* menu.json */,
 				E607C74928367C37006ECD57 /* Menu.swift */,
 				E607C74B28367C8F006ECD57 /* Helper.swift */,
 			);
@@ -110,6 +109,7 @@
 		E660021328349DE1006614A5 /* TryBasic */ = {
 			isa = PBXGroup;
 			children = (
+				E607C74728367BED006ECD57 /* menu.json */,
 				E607C74D28367CAA006ECD57 /* iDine */,
 				E660021428349DE1006614A5 /* TryBasicApp.swift */,
 				E660021628349DE1006614A5 /* ContentView.swift */,
