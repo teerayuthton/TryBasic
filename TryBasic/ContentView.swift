@@ -13,29 +13,9 @@ struct ContentView: View {
     
     let title: String
     
-    
     let menu = Bundle.main.decode([MenuSection].self ,from: "menu.json")
     
     var body: some View {
-        //https://cocoacasts.com/swiftui-fundamentals-customizing-views-with-modifiers
-        /*VStack(alignment: .leading) {
-            Text(title)
-                .font(.title)
-                .foregroundColor(.green)
-                .background(.red)
-            Text(title)
-                .underline()
-                .bold()
-                .padding()
-            Button("Show details") {
-                showDetails.toggle()
-            }
-
-            if showDetails {
-                Text("You should follow me on Twitter: @twostraws \n")
-                    .font(.title)
-            }
-        }*/
         
         //https://www.hackingwithswift.com/quick-start/swiftui/building-a-menu-using-list
         NavigationView {
@@ -43,7 +23,9 @@ struct ContentView: View {
                 ForEach(menu) { section in
                     Section(header: Text(section.name)) {
                         ForEach(section.items) { item in
-                            Text(item.name)
+                            NavigationLink(destination: SecondView()) {
+                                Text(item.name)
+                            }
                         }
                     }
                 }
