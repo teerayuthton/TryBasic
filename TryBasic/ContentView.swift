@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var showDetails = false
     
     let title: String
-    
+    /*
     let menu = Bundle.main.decode([MenuSection].self ,from: "menu.json")
     
     var body: some View {
@@ -33,7 +33,50 @@ struct ContentView: View {
             .navigationTitle("Menu")
             .listStyle(GroupedListStyle())
         }
+    }*/
+    
+    //Try to make push different view
+    //https://stackoverflow.com/a/62321613/3057165
+    enum MenuItem: String, CaseIterable, Identifiable {
+        var id : MenuItem {
+            self
+        }
+
+        case firstCase = "firstCase"
+        case secondCase = "secondCase"
+        case thirdCase = "thirdCase"
+        
+        static let infoSection: [MenuItem] = [.firstCase,
+            .secondCase,
+            .thirdCase]
     }
+    
+    var body: some View {
+        NavigationView {
+            List {
+                makeSection(title: "Info", items: MenuItem.infoSection)
+            }
+            .navigationBarTitle("Menu")
+        }
+    }
+        
+    private func makeSection(title: String, items: [MenuItem]) -> some View {
+        Section(header: Text(title)) {
+            ForEach(items, id: \.self) { item in
+                NavigationLink(destination: self.destination(forItem: item)) {
+                    Text(item.rawValue)
+                }
+            }
+        }
+    }
+    
+    private func destination(forItem item: MenuItem) -> some View {
+            switch item {
+                case .firstCase: return AnyView(Text("Staff View"))
+                case .secondCase: return AnyView(Text("Projects View"))
+                case .thirdCase: return AnyView(Text("Invoices View"))
+            }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
