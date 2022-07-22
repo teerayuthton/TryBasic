@@ -23,7 +23,7 @@ platform :ios do
       app_identifier: "com.teerayuth.TryBasic",
   		clean: true,
   		code_coverage: true,
-  		devices: ["iPhone 13 Pro Max"],
+  		devices: ["iPhone 12 Pro Max"],
   		reinstall_app: true,
   		fail_build: false,
   		result_bundle: true
