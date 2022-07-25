@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TryBasicUITests.xctest' tests='8' failures='0'>
+  <testsuite name='TryBasicTests.TryBasicTests' tests='2' failures='0'>
+    <testcase classname='TryBasicTests.TryBasicTests' name='testExample' time='0.012'/>
+    <testcase classname='TryBasicTests.TryBasicTests' name='testPerformanceExample' time='0.336'/>
+  </testsuite>
+  <testsuite name='TryBasicUITests.TryBasicUITests' tests='2' failures='0'>
+    <testcase classname='TryBasicUITests.TryBasicUITests' name='testExample' time='6.241'/>
+    <testcase classname='TryBasicUITests.TryBasicUITests' name='testLaunchPerformance' time='109.494'/>
+  </testsuite>
+  <testsuite name='TryBasicUITests.TryBasicUITestsLaunchTests' tests='4' failures='0'>
+    <testcase classname='TryBasicUITests.TryBasicUITestsLaunchTests' name='testLaunch' time='8.078'/>
+    <testcase classname='TryBasicUITests.TryBasicUITestsLaunchTests' name='testLaunch' time='9.753'/>
+    <testcase classname='TryBasicUITests.TryBasicUITestsLaunchTests' name='testLaunch' time='7.750'/>
+    <testcase classname='TryBasicUITests.TryBasicUITestsLaunchTests' name='testLaunch' time='9.629'/>
+  </testsuite>
+</testsuites>
