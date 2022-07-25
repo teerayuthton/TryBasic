@@ -24,6 +24,7 @@ platform :ios do
   		clean: true,
   		code_coverage: true,
   		devices: ["iPhone 12 Pro Max"],
+  		output_directory: 'test-results',
   		reinstall_app: true,
   		fail_build: false,
   		result_bundle: true
