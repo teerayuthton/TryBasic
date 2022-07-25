@@ -3,4 +3,4 @@
 
 
 # TryBasic
-Learn and practice basic coding
+Learn and practice basic coding, CI/CD
