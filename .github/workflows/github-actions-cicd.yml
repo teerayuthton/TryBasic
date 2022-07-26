@@ -18,10 +18,13 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
-      - name: Fastlane Action
-        uses: maierj/fastlane-action@v2.2.1
-        with:
-          lane: 'test'
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Run tests
+        run: |
+          set -o pipefail
+          fastlane tests
 
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2.0.0-beta.3
