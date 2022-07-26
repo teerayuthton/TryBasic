@@ -18,8 +18,11 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
-      - name: Fastlane Action
-      - uses: maierj/fastlane-action@v2.2.1
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2'
+      - uses: maierj/fastlane-action@v2.2.0
         with:
           lane: 'test'
           subdirectory: 'ios'
