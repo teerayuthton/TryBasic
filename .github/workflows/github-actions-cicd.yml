@@ -19,7 +19,14 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
       - uses: actions/checkout@v2
-      - run: fastlane test
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.2'
+      - uses: maierj/fastlane-action@v2.2.0
+        with:
+          lane: 'test'
+          subdirectory: 'ios'
+          bundle-install-path: 'vendor/bundle'
 
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2.0.0-beta.3
