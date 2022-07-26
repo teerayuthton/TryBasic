@@ -20,11 +20,11 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Run tests
         run: |
           set -o pipefail
-          fastlane tests
+          bundle exec fastlane test
 
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2.0.0-beta.3
