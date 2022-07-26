@@ -18,6 +18,10 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
+      - name: Install bundler
+        run: |
+          gem install bundler
+
       - name: Checkout
         uses: actions/checkout@v2
 
