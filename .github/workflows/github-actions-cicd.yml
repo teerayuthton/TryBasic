@@ -2,7 +2,7 @@ name: GitHub Actions CICD
 on: [push]
 jobs:
   Run Test:
-    runs-on: macos-latest
+    runs-on: macos-12
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
