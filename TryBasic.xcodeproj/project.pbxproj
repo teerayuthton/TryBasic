@@ -10,7 +10,6 @@
 		E607C74828367BED006ECD57 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = E607C74728367BED006ECD57 /* menu.json */; };
 		E607C74A28367C37006ECD57 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607C74928367C37006ECD57 /* Menu.swift */; };
 		E607C74C28367C8F006ECD57 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607C74B28367C8F006ECD57 /* Helper.swift */; };
-		E607C74F2837CE5B006ECD57 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607C74E2837CE5B006ECD57 /* SecondView.swift */; };
 		E660021528349DE1006614A5 /* TryBasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660021428349DE1006614A5 /* TryBasicApp.swift */; };
 		E660021728349DE1006614A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660021628349DE1006614A5 /* ContentView.swift */; };
 		E660021928349DE7006614A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E660021828349DE7006614A5 /* Assets.xcassets */; };
@@ -18,6 +17,9 @@
 		E660022628349DE7006614A5 /* TryBasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660022528349DE7006614A5 /* TryBasicTests.swift */; };
 		E660023028349DE7006614A5 /* TryBasicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660022F28349DE7006614A5 /* TryBasicUITests.swift */; };
 		E660023228349DE7006614A5 /* TryBasicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660023128349DE7006614A5 /* TryBasicUITestsLaunchTests.swift */; };
+		E6CC1C2828BEFF4A004043A9 /* TryMVVMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC1C2728BEFF4A004043A9 /* TryMVVMView.swift */; };
+		E6CC1C2A28BF0023004043A9 /* TryMVPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC1C2928BF0022004043A9 /* TryMVPView.swift */; };
+		E6CC1C2C28BF0115004043A9 /* TrySOLIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CC1C2B28BF0115004043A9 /* TrySOLIDView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		E607C74728367BED006ECD57 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		E607C74928367C37006ECD57 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		E607C74B28367C8F006ECD57 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		E607C74E2837CE5B006ECD57 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		E660021128349DE1006614A5 /* TryBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E660021428349DE1006614A5 /* TryBasicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryBasicApp.swift; sourceTree = "<group>"; };
 		E660021628349DE1006614A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +53,9 @@
 		E660022B28349DE7006614A5 /* TryBasicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryBasicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E660022F28349DE7006614A5 /* TryBasicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryBasicUITests.swift; sourceTree = "<group>"; };
 		E660023128349DE7006614A5 /* TryBasicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryBasicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6CC1C2728BEFF4A004043A9 /* TryMVVMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryMVVMView.swift; sourceTree = "<group>"; };
+		E6CC1C2928BF0022004043A9 /* TryMVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryMVPView.swift; sourceTree = "<group>"; };
+		E6CC1C2B28BF0115004043A9 /* TrySOLIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrySOLIDView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,7 @@
 				E607C74D28367CAA006ECD57 /* iDine */,
 				E660021428349DE1006614A5 /* TryBasicApp.swift */,
 				E660021628349DE1006614A5 /* ContentView.swift */,
-				E607C74E2837CE5B006ECD57 /* SecondView.swift */,
+				E6CC1C2628BEFF14004043A9 /* SubView */,
 				E660021828349DE7006614A5 /* Assets.xcassets */,
 				E660021A28349DE7006614A5 /* Preview Content */,
 			);
@@ -145,6 +149,16 @@
 				E660023128349DE7006614A5 /* TryBasicUITestsLaunchTests.swift */,
 			);
 			path = TryBasicUITests;
+			sourceTree = "<group>";
+		};
+		E6CC1C2628BEFF14004043A9 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				E6CC1C2728BEFF4A004043A9 /* TryMVVMView.swift */,
+				E6CC1C2928BF0022004043A9 /* TryMVPView.swift */,
+				E6CC1C2B28BF0115004043A9 /* TrySOLIDView.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6CC1C2A28BF0023004043A9 /* TryMVPView.swift in Sources */,
+				E6CC1C2C28BF0115004043A9 /* TrySOLIDView.swift in Sources */,
 				E607C74A28367C37006ECD57 /* Menu.swift in Sources */,
 				E660021728349DE1006614A5 /* ContentView.swift in Sources */,
+				E6CC1C2828BEFF4A004043A9 /* TryMVVMView.swift in Sources */,
 				E660021528349DE1006614A5 /* TryBasicApp.swift in Sources */,
-				E607C74F2837CE5B006ECD57 /* SecondView.swift in Sources */,
 				E607C74C28367C8F006ECD57 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

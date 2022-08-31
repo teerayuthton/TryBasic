@@ -42,19 +42,24 @@ struct ContentView: View {
             self
         }
 
-        case firstCase = "firstCase"
-        case secondCase = "secondCase"
-        case thirdCase = "thirdCase"
+        case mvvm = "MVVM"
+        case mvp = "MVP"
+        case solid = "SOLID"
         
-        static let infoSection: [MenuItem] = [.firstCase,
-            .secondCase,
-            .thirdCase]
+        static let infoSection: [MenuItem] = [
+            .mvvm,
+            .mvp,
+            .solid
+        ]
     }
     
     var body: some View {
         NavigationView {
             List {
-                makeSection(title: "Info", items: MenuItem.infoSection)
+                makeSection(
+                    title: "Info",
+                    items: MenuItem.infoSection
+                )
             }
             .navigationBarTitle("Menu")
         }
@@ -63,7 +68,8 @@ struct ContentView: View {
     private func makeSection(title: String, items: [MenuItem]) -> some View {
         Section(header: Text(title)) {
             ForEach(items, id: \.self) { item in
-                NavigationLink(destination: self.destination(forItem: item)) {
+                NavigationLink(
+                    destination: self.destination(forItem: item)) {
                     Text(item.rawValue)
                 }
             }
@@ -71,12 +77,15 @@ struct ContentView: View {
     }
     
     private func destination(forItem item: MenuItem) -> some View {
-            switch item {
-                case .firstCase: return AnyView(Text("Staff View"))
-                case .secondCase: return AnyView(Text("Projects View"))
-                case .thirdCase: return AnyView(Text("Invoices View"))
-            }
+        switch item {
+        case .mvvm:
+            return AnyView(TryMVVMView())
+        case .mvp:
+            return AnyView(TryMVPView())
+        case .solid:
+            return AnyView(TrySOLIDView())
         }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -84,7 +93,8 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             ContentView(title: "previews")
                     .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
-                .environment(\.sizeCategory, .extraSmall)
+                .environment(\.sizeCategory, .extraSmall
+                )
             ContentView(title: "previews")
                     .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
                 .environment(\.sizeCategory, .extraSmall)
